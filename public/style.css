@@ -49,6 +49,13 @@ footer{
     right:0;
 }
 
+/* Paper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+} */
+
 @media (max-width: 768px){
     /* header{
         max-width: 100%;

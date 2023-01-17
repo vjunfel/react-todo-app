@@ -7,13 +7,13 @@ function FormArea({ addNote }) {
     title: "",
     content: "",
   });
+
   function changeHandler(e) {
     const { name, value } = e.target;
     setNote((preValues) => {
       return { ...preValues, [name]: value };
     });
   }
-  //   console.log(note);
 
   function clickHandle() {
     addNote(note);
@@ -22,8 +22,9 @@ function FormArea({ addNote }) {
       content: "",
     });
   }
+
   return (
-    <Paper style={{ margin: "10px 10%", padding: "25px 50px" }}>
+    <Paper style={{ margin: "20px 10%", padding: "25px 50px" }}>
       <form>
         <TextField
           onChange={changeHandler}

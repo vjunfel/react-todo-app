@@ -7,18 +7,26 @@ import Note from './components/Note';
 function App() {
   const [notes, setNotes] = useState([])
   console.log(notes)
+
   function addNote(note){
     setNotes(preNotes => {
       return [...preNotes, note]
+    })
+  } 
+  function delNote(id){
+    setNotes(preNotes => {
+      return preNotes.filter((note, index) => {
+        return index !== id
+      })
     })
   }
   return (
     <>
       <Header/>
       <FormArea addNote={addNote}/>
-      <Note/>
-      <Note/>
-      <Note/>
+      {notes.map((note, index) => (
+        <Note id={index} delNote={delNote} title = {note.title} content = {note.content}/>
+      ))}
       <Footer/>
     </>
   );

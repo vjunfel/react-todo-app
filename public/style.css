@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+header{
+    background-color: rgb(30, 30, 30);;
+    /* border-bottom: 1px solid grey; */
+    color: white
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    bottom: 15px;
+    left:0;
+    right:0;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -9,11 +24,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
     height: 100vh;
-}
-
-header{
-    background-color: rgb(30, 30, 30);;
-    /* border-bottom: 1px solid grey; */
 }
 
 nav{
@@ -40,21 +50,7 @@ nav span:hover{
     padding-bottom: 8px;
     border-bottom: 2px solid greenyellow;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    position:absolute;
-    bottom: 15px;
-    left:0;
-    right:0;
-}
 
-/* Paper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-} */
 
 @media (max-width: 768px){
     /* header{
